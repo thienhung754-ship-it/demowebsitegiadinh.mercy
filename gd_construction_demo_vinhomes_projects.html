@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiệt Tác Bàn Giao | Gia Định Homes | Thiết Kế & Thi Công Trọn Gói Thượng Lưu</title>
+  <meta name="description" content="Khám phá hồ sơ kiệt tác thiết kế thi công biệt thự, dinh thự, penthouse và Sky Villa của Gia Định Homes. Bộ lọc dự án thông minh và hình ảnh nghiệm thu thực tế.">
+  
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- External Shared CSS Stylesheet -->
+  <link rel="stylesheet" href="gd_vinhomes_style.css">
+</head>
+<body class="projects-sub-page">
+
+  <!-- AMBIENT BACKGROUND GLOW SPOTLIGHTS -->
+  <div class="bg-spotlight spotlight-1"></div>
+  <div class="bg-spotlight spotlight-2"></div>
+  <div class="bg-spotlight spotlight-3"></div>
+
+  <!-- INTRO PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">GIA DINH<span> HOMES</span></div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="mainHeader">
+    <div class="container header-container">
+      <a href="index.html" class="logo" style="text-decoration: none;">
+        GIA DINH<span> HOMES.</span>
+      </a>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gd_construction_demo_vinhomes_about.html">Về Gia Định</a></li>
+          <li><a href="gd_construction_demo_vinhomes_services.html">Lĩnh vực</a></li>
+          <li><a href="gd_construction_demo_vinhomes_projects.html" style="color: var(--gold);">Kiệt tác</a></li>
+          <li><a href="gd_construction_demo_vinhomes_magazine.html">Tạp chí</a></li>
+          <li><a href="gd_construction_demo_vinhomes_contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <span class="active">VI</span> | <span>EN</span>
+        </div>
+        <a href="gd_construction_demo_vinhomes_contact.html" class="nav-btn" style="text-decoration: none; display: inline-block;">Nhận tư vấn</a>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="mobileMenuBtn" aria-label="Mở menu di động">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE HERO BANNER -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=75');"></div>
+    <div class="container">
+      <div class="subpage-hero-content">
+        <h1>Kiệt Tác Thiết Kế</h1>
+        <p>Hồ sơ năng lực thực tế qua các dự án biệt thự, Penthouse triệu đô tiêu biểu đã bàn giao.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY WITH SEARCH CONSOLE -->
+  <main class="subpage-main">
+    <div class="container">
+      
+      <!-- Search Console Bar -->
+      <div class="search-console">
+        <div class="console-field">
+          <label for="filterType">Loại hình kiệt tác</label>
+          <select class="console-select" id="filterType">
+            <option value="all">Tất cả phân khúc</option>
+            <option value="villa">Biệt thự & Dinh thự</option>
+            <option value="penthouse">Penthouse / Sky Villa</option>
+            <option value="townhouse">Nhà phố cao cấp</option>
+          </select>
+        </div>
+        <div class="console-field">
+          <label for="filterLocation">Khu vực bàn giao</label>
+          <select class="console-select" id="filterLocation">
+            <option value="all">Tất cả vị trí</option>
+            <option value="district2">Thảo Điền / Quận 2</option>
+            <option value="district7">Phú Mỹ Hưng / Quận 7</option>
+            <option value="district9">Quận 9 / Thủ Đức</option>
+          </select>
+        </div>
+        <div class="console-field">
+          <label for="filterStyle">Gu thẩm mỹ</label>
+          <select class="console-select" id="filterStyle">
+            <option value="all">Tất cả phong cách</option>
+            <option value="modern">Luxury Modern</option>
+            <option value="classic">Tân Cổ Điển (Classic)</option>
+          </select>
+        </div>
+        <button class="btn-gold" style="height: 50px;" id="btnSearchConsole">Tìm kiếm</button>
+      </div>
+
+      <!-- Asymmetric Portfolio Grid -->
+      <div class="asymmetric-grid" id="portfolioContainer">
+        <!-- Card 1 -->
+        <div class="project-item" data-type="villa" data-location="district7" data-style="classic">
+          <div class="project-img-wrapper">
+            <span class="project-meta-overlay">Biệt thự Chateau</span>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&dpr=2&q=75" alt="Dự án Chateau" loading="lazy">
+          </div>
+          <div class="project-caption">
+            <h3>Dinh Thự Chateau Riverside</h3>
+            <p>Phong cách Tân Cổ Điển lịch lãm, sử dụng đá cẩm thạch trắng tự nhiên lát sảnh chính và gỗ chạm khắc thủ công.</p>
+            <div class="project-specs">
+              <span>Diện tích: 620m²</span>
+              <span>Bàn giao: 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-item" data-type="penthouse" data-location="district2" data-style="modern">
+          <div class="project-img-wrapper">
+            <span class="project-meta-overlay">Sky Villa Thảo Điền</span>
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=700&dpr=2&q=75" alt="Sky Villa Serenade" loading="lazy">
+          </div>
+          <div class="project-caption">
+            <h3>Sky Villa Serenade Thảo Điền</h3>
+            <p>Thiết kế gỗ óc chó nguyên khối nhập khẩu trực tiếp từ Bắc Mỹ, tối ưu ban công kính tràn viền view sông cực đỉnh.</p>
+            <div class="project-specs">
+              <span>Diện tích: 380m²</span>
+              <span>Bàn giao: 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-item" data-type="penthouse" data-location="district2" data-style="modern">
+          <div class="project-img-wrapper">
+            <span class="project-meta-overlay">Penthouse Grand Marina</span>
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&dpr=2&q=75" alt="Penthouse Grand Marina" loading="lazy">
+          </div>
+          <div class="project-caption">
+            <h3>Penthouse Grand Marina Sài Gòn</h3>
+            <p>Kiến trúc tối giản đẳng cấp quốc tế, sở hữu tầm nhìn 270 độ ôm trọn bến du thuyền và trung tâm Sài Gòn.</p>
+            <div class="project-specs">
+              <span>Diện tích: 520m²</span>
+              <span>Bàn giao: 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="project-item" data-type="penthouse" data-location="district7" data-style="modern">
+          <div class="project-img-wrapper">
+            <span class="project-meta-overlay">Penthouse Bason</span>
+            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&dpr=2&q=75" alt="Penthouse Bason" loading="lazy">
+          </div>
+          <div class="project-caption">
+            <h3>Penthouse Bason Grand Marina</h3>
+            <p>Kiến trúc phi đối xứng mở rộng, mang hơi thở của các căn hộ New York kết hợp hệ thống đèn âm trần cao cấp.</p>
+            <div class="project-specs">
+              <span>Diện tích: 450m²</span>
+              <span>Bàn giao: 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="project-item" data-type="villa" data-location="district9" data-style="classic">
+          <div class="project-img-wrapper">
+            <span class="project-meta-overlay">Riviera Cove Villa</span>
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=700&dpr=2&q=75" alt="Riviera Cove Villa" loading="lazy">
+          </div>
+          <div class="project-caption">
+            <h3>Dinh Thự Riviera Cove</h3>
+            <p>Quy mô kết cấu 3 tầng lộng lẫy, khu vườn nhiệt đới xanh mát và hồ bơi chân mây thiết kế riêng cho đại gia đình.</p>
+            <div class="project-specs">
+              <span>Diện tích: 800m²</span>
+              <span>Bàn giao: 2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="project-item" data-type="townhouse" data-location="district9" data-style="modern">
+          <div class="project-img-wrapper">
+            <span class="project-meta-overlay">Nhà phố Verosa Park</span>
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=700&dpr=2&q=75" alt="Verosa Park Townhouse" loading="lazy">
+          </div>
+          <div class="project-caption">
+            <h3>Townhouse Verosa Park</h3>
+            <p>Giải pháp tối giản hóa không gian sống, tập trung vào công năng sử dụng thông minh và nghệ thuật chiếu sáng gián tiếp.</p>
+            <div class="project-specs">
+              <span>Diện tích: 280m²</span>
+              <span>Bàn giao: 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- DYNAMIC PROJECT DETAIL MODAL -->
+  <div class="modal-overlay" id="projectDetailModal">
+    <div class="modal-card">
+      <span class="modal-close" id="modalCloseBtn">&times;</span>
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; margin-top: 20px;">
+        <div>
+          <img id="modalProjectImg" src="" alt="Project Image" style="width: 100%; height: 350px; object-fit: cover; border-radius: 2px; border: 1px solid var(--border-color); padding: 4px;">
+        </div>
+        <div>
+          <span id="modalProjectTag" style="font-size: 10px; font-weight: 700; color: var(--gold); border: 1px solid var(--border-color); padding: 4px 10px; text-transform: uppercase; letter-spacing: 1px; display: inline-block; margin-bottom: 16px;"></span>
+          <h3 id="modalProjectTitle" style="font-family: 'Cormorant Garamond', serif; font-size: 32px; color: #FFFFFF; margin-bottom: 12px;"></h3>
+          <p id="modalProjectDesc" style="color: var(--text-muted); font-size: 13px; line-height: 1.6; margin-bottom: 24px;"></p>
+          
+          <div style="border-top: 1px solid var(--border-color); padding-top: 20px;">
+            <h5 style="color: #FFFFFF; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Thông Số Kỹ Thuật</h5>
+            <ul style="list-style: none; font-size: 13px; color: var(--text-muted); display: flex; flex-direction: column; gap: 8px;">
+              <li>Diện tích xây dựng: <span id="modalProjectArea" style="color: #FFFFFF; font-weight: 600;"></span></li>
+              <li>Năm hoàn thành nghiệm thu: <span id="modalProjectYear" style="color: #FFFFFF; font-weight: 600;"></span></li>
+              <li>Tổng thầu hoàn thiện: <span style="color: #FFFFFF; font-weight: 600;">Gia Định Homes</span></li>
+              <li>Chất lượng mộc: <span style="color: #FFFFFF; font-weight: 600;">Gỗ Óc Chó FAS tiêu chuẩn xuất khẩu</span></li>
+            </ul>
+          </div>
+
+          <button class="btn-gold" style="width: 100%; margin-top: 30px;" onclick="closeModal(); document.getElementById('mainHeader').scrollIntoView();">Đăng Ký Khảo Sát Thực Tế</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="grid-column: span 1.5;">
+          <div class="footer-logo">GIA DINH<span> HOMES.</span></div>
+          <p style="font-size: 13px; line-height: 1.8; margin-bottom: 16px;">Công ty Cổ phần Đầu tư Thiết Kế Xây Dựng và Nội Thất Gia Định. Nhà thầu thiết kế thi công biệt thự, sky villa trọn gói hàng đầu tại miền Nam.</p>
+          <p style="font-size: 11px; color: rgba(255,255,255,0.2);">MST: 0315488102 - Cấp bởi Sở KH&ĐT TP.HCM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Văn Phòng Chính</h4>
+          <ul style="font-size: 13px; color: var(--text-muted);">
+            <li>Địa chỉ: 63-65 Điện Biên Phủ, P.15, Q.Bình Thạnh, TP.HCM</li>
+            <li>Hotline: 0839.555.111</li>
+            <li>Email: contact@gdfurniture.vn</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Khám Phá</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gd_construction_demo_vinhomes_about.html">Về Gia Định</a></li>
+            <li><a href="gd_construction_demo_vinhomes_services.html">Dịch vụ chuyên sâu</a></li>
+            <li><a href="gd_construction_demo_vinhomes_projects.html">Kiệt tác nổi bật</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Chính sách</h4>
+          <ul>
+            <li><a href="#" onclick="event.preventDefault();">Chính sách bảo mật</a></li>
+            <li><a href="#" onclick="event.preventDefault();">Chế độ bảo hành 5 năm</a></li>
+            <li><a href="#" onclick="event.preventDefault();">Quy trình nghiệm thu</a></li>
+            <li><a href="#" onclick="event.preventDefault();">Tuyển dụng KTS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gia Dinh Homes. Thiết kế & phát triển độc quyền bởi <span>MERCY TECH</span>.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link-text">Facebook</a>
+          <a href="#" class="social-link-text">Instagram</a>
+          <a href="#" class="social-link-text">Linkedin</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-overlay" id="mobileMenuOverlay">
+    <div class="mobile-card">
+      <span class="mobile-close" id="mobileMenuClose">&times;</span>
+      <div class="logo" style="margin-bottom: 40px;">
+        GIA DINH<span> HOMES</span>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gd_construction_demo_vinhomes_about.html">Về Gia Định</a></li>
+        <li><a href="gd_construction_demo_vinhomes_services.html">Lĩnh vực hoạt động</a></li>
+        <li><a href="gd_construction_demo_vinhomes_projects.html" style="color: var(--gold);">Kiệt tác nổi bật</a></li>
+        <li><a href="gd_construction_demo_vinhomes_magazine.html">Tạp chí không gian</a></li>
+        <li><a href="gd_construction_demo_vinhomes_contact.html">Liên hệ</a></li>
+      </ul>
+      <a href="gd_construction_demo_vinhomes_contact.html" class="mobile-btn" style="text-decoration: none; text-align: center; display: block;">Nhận tư vấn</a>
+      <div style="font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 20px;">
+        <p>Hotline: 0839.555.111</p>
+        <p style="margin-top: 6px;">Email: contact@gdfurniture.vn</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING CONTACT TYPOGRAPHIC BAR -->
+  <div class="floating-contact-bar">
+    <a href="https://zalo.me/0839555111" target="_blank" class="floating-action-text">ZALO</a>
+    <div class="floating-divider"></div>
+    <a href="https://m.me/gdfurniture" target="_blank" class="floating-action-text">MESSENGER</a>
+    <div class="floating-divider"></div>
+    <a href="tel:0839555111" class="floating-action-text" style="color: var(--gold-light);">CALL</a>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Preloader dismissal (1.0s)
+      const preloader = document.getElementById('preloader');
+      setTimeout(() => {
+        preloader.classList.add('loaded');
+      }, 1000);
+
+      // Header scroll effect
+      const header = document.getElementById('mainHeader');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Mobile Menu Navigation controls
+      const mobileOverlay = document.getElementById('mobileMenuOverlay');
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+      function openMobileMenu() {
+        mobileOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMobileMenu() {
+        mobileOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+      if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+
+      // Filter Logic
+      const filterType = document.getElementById('filterType');
+      const filterLocation = document.getElementById('filterLocation');
+      const filterStyle = document.getElementById('filterStyle');
+      const btnSearchConsole = document.getElementById('btnSearchConsole');
+      const projectItems = document.querySelectorAll('.project-item');
+
+      if (btnSearchConsole) {
+        btnSearchConsole.addEventListener('click', () => {
+          const typeVal = filterType.value;
+          const locVal = filterLocation.value;
+          const styleVal = filterStyle.value;
+
+          projectItems.forEach(item => {
+            const itemType = item.getAttribute('data-type');
+            const itemLoc = item.getAttribute('data-location');
+            const itemStyle = item.getAttribute('data-style');
+
+            const matchType = typeVal === 'all' || itemType === typeVal;
+            const matchLoc = locVal === 'all' || itemLoc === locVal;
+            const matchStyle = styleVal === 'all' || itemStyle === styleVal;
+
+            if (matchType && matchLoc && matchStyle) {
+              item.style.display = 'block';
+              setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'scale(1) translateY(0)';
+              }, 50);
+            } else {
+              item.style.opacity = '0';
+              item.style.transform = 'scale(0.95) translateY(15px)';
+              setTimeout(() => {
+                item.style.display = 'none';
+              }, 400);
+            }
+          });
+        });
+      }
+
+      // Modal Logic
+      const modal = document.getElementById('projectDetailModal');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      
+      window.openModal = function(tag, title, desc, area, year, img) {
+        document.getElementById('modalProjectImg').src = img;
+        document.getElementById('modalProjectTag').innerText = tag;
+        document.getElementById('modalProjectTitle').innerText = title;
+        document.getElementById('modalProjectDesc').innerText = desc;
+        document.getElementById('modalProjectArea').innerText = area;
+        document.getElementById('modalProjectYear').innerText = year;
+        
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      window.closeModal = function() {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+      
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      // Bind Escape key to close modal
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+      });
+
+      // Bind click on project cards to open modal
+      projectItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const tag = item.querySelector('.project-meta-overlay').innerText;
+          const title = item.querySelector('h3').innerText;
+          const desc = item.querySelector('p').innerText;
+          const specs = item.querySelectorAll('.project-specs span');
+          const area = specs[0].innerText.replace('Diện tích: ', '');
+          const year = specs[1].innerText.replace('Bàn giao: ', '');
+          const img = item.querySelector('.project-img-wrapper img').src;
+          
+          openModal(tag, title, desc, area, year, img);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

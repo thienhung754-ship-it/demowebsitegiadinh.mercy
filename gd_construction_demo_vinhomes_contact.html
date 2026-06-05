@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Hệ Tư Vấn | Gia Định Homes | Thiết Kế & Thi Công Trọn Gói Thượng Lưu</title>
+  <meta name="description" content="Đăng ký tư vấn trực tiếp và khảo sát mặt bằng miễn phí từ KTS trưởng Gia Định Homes. Thông tin liên hệ văn phòng Bình Thạnh TP.HCM. Hotline 24/7.">
+  
+  <!-- Google Fonts: Cormorant Garamond & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- External Shared CSS Stylesheet -->
+  <link rel="stylesheet" href="gd_vinhomes_style.css">
+</head>
+<body>
+
+  <!-- AMBIENT BACKGROUND GLOW SPOTLIGHTS -->
+  <div class="bg-spotlight spotlight-1"></div>
+  <div class="bg-spotlight spotlight-2"></div>
+
+  <!-- INTRO PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">GIA DINH<span> HOMES</span></div>
+      <div class="progress-bar-container">
+        <div class="progress-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="mainHeader">
+    <div class="container header-container">
+      <a href="index.html" class="logo" style="text-decoration: none;">
+        GIA DINH<span> HOMES.</span>
+      </a>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gd_construction_demo_vinhomes_about.html">Về Gia Định</a></li>
+          <li><a href="gd_construction_demo_vinhomes_services.html">Lĩnh vực</a></li>
+          <li><a href="gd_construction_demo_vinhomes_projects.html">Kiệt tác</a></li>
+          <li><a href="gd_construction_demo_vinhomes_magazine.html">Tạp chí</a></li>
+          <li><a href="gd_construction_demo_vinhomes_contact.html" style="color: var(--gold);">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <span class="active">VI</span> | <span>EN</span>
+        </div>
+        <a href="gd_construction_demo_vinhomes_contact.html" class="nav-btn" style="text-decoration: none; display: inline-block;">Nhận tư vấn</a>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="mobileMenuBtn" aria-label="Mở menu di động">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUBPAGE HERO BANNER -->
+  <section class="subpage-hero">
+    <div class="subpage-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=75');"></div>
+    <div class="container">
+      <div class="subpage-hero-content">
+        <h1>Liên Hệ Với Chúng Tôi</h1>
+        <p>Gửi yêu cầu thiết kế thi công biệt thự, sky villa để nhận tư vấn từ kiến trúc sư trưởng.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SPLIT SECTION -->
+  <main class="subpage-main">
+    <div class="container contact-split">
+      <!-- Left: Form -->
+      <div class="contact-form-wrapper">
+        <h3>Đăng Ký Tư Vấn</h3>
+        <p>Kiến trúc sư trưởng của chúng tôi sẽ liên hệ tư vấn trực tiếp và khảo sát mặt bằng miễn phí cho anh/chị.</p>
+        
+        <form id="consultationForm">
+          <div class="form-group">
+            <label for="clientName">Họ và tên</label>
+            <input type="text" id="clientName" class="form-input" placeholder="Nguyễn Văn A" required>
+          </div>
+          <div class="form-group">
+            <label for="clientPhone">Số điện thoại liên lạc</label>
+            <input type="tel" id="clientPhone" class="form-input" placeholder="0908xxxxxx" pattern="0[35789][0-9]{8}" maxlength="10" title="Vui lòng nhập số điện thoại Việt Nam hợp lệ (10 chữ số di động, bắt đầu bằng 03, 05, 07, 08 hoặc 09)" required>
+          </div>
+          <div class="form-group">
+            <label for="clientMessage">Mô tả nhu cầu dự án</label>
+            <textarea id="clientMessage" class="form-input" style="height: 100px; resize: none;" placeholder="Ví dụ: Thiết kế nội thất biệt thự 3 tầng tại Thảo Điền..." required></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="btnSubmitForm">Gửi thông tin đăng ký</button>
+        </form>
+
+        <!-- Form Success Message -->
+        <div id="formSuccessMessage" style="display: none; text-align: center; padding: 20px 0;">
+          <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #FFFFFF; margin-bottom: 8px;">Gửi Yêu Cầu Thành Công!</h4>
+          <p style="color: var(--text-muted); font-size: 13px;">Gia Định Homes sẽ liên hệ lại tư vấn trong vòng 15 phút làm việc.</p>
+        </div>
+      </div>
+
+      <!-- Right: Info + Map -->
+      <div style="display: flex; flex-direction: column; gap: 40px;">
+        <div style="background: var(--obsidian-card); border: 1px solid var(--border-color); padding: 40px; border-radius: 4px;">
+          <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #FFFFFF; margin-bottom: 24px; text-transform: uppercase; letter-spacing: 1px;">Văn Phòng Chính</h4>
+          <ul style="list-style: none; font-size: 14px; color: var(--text-muted); display: flex; flex-direction: column; gap: 16px;">
+            <li>Địa chỉ: <span style="color: #FFFFFF; font-weight: 500;">63-65 Điện Biên Phủ, Phường 15, Quận Bình Thạnh, TP.HCM</span></li>
+            <li>Đường dây nóng: <span style="color: #FFFFFF; font-weight: 500;">0839.555.111</span></li>
+            <li>Hộp thư điện tử: <span style="color: #FFFFFF; font-weight: 500;">contact@gdfurniture.vn</span></li>
+            <li>Giờ làm việc: <span style="color: #FFFFFF; font-weight: 500;">Thứ 2 - Thứ 7 (8:00 - 17:30)</span></li>
+          </ul>
+        </div>
+
+        <!-- Dark Custom Map Mockup -->
+        <div class="map-mockup" style="flex-grow: 1; min-height: 300px;">
+          <div class="map-grid-pattern"></div>
+          <div class="map-road road-h"></div>
+          <div class="map-road road-v"></div>
+          <div class="map-pin-typographic">VP BÌNH THẠNH</div>
+          <div class="map-tooltip" style="bottom: 20px; left: 50%; transform: translateX(-50%); top: auto;">
+            <h5>Văn Phòng Gia Định Homes</h5>
+            <p>Tầng 12, Cao ốc 63-65 Điện Biên Phủ, Phường 15, Quận Bình Thạnh, TP.HCM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col" style="grid-column: span 1.5;">
+          <div class="footer-logo">GIA DINH<span> HOMES.</span></div>
+          <p style="font-size: 13px; line-height: 1.8; margin-bottom: 16px;">Công ty Cổ phần Đầu tư Thiết Kế Xây Dựng và Nội Thất Gia Định. Nhà thầu thiết kế thi công biệt thự, sky villa trọn gói hàng đầu tại miền Nam.</p>
+          <p style="font-size: 11px; color: rgba(255,255,255,0.2);">MST: 0315488102 - Cấp bởi Sở KH&ĐT TP.HCM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Văn Phòng Chính</h4>
+          <ul style="font-size: 13px; color: var(--text-muted);">
+            <li>Địa chỉ: 63-65 Điện Biên Phủ, P.15, Q.Bình Thạnh, TP.HCM</li>
+            <li>Hotline: 0839.555.111</li>
+            <li>Email: contact@gdfurniture.vn</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Khám Phá</h4>
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="gd_construction_demo_vinhomes_about.html">Về Gia Định</a></li>
+            <li><a href="gd_construction_demo_vinhomes_services.html">Dịch vụ chuyên sâu</a></li>
+            <li><a href="gd_construction_demo_vinhomes_projects.html">Kiệt tác nổi bật</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Chính sách</h4>
+          <ul>
+            <li><a href="#" onclick="event.preventDefault();">Chính sách bảo mật</a></li>
+            <li><a href="#" onclick="event.preventDefault();">Chế độ bảo hành 5 năm</a></li>
+            <li><a href="#" onclick="event.preventDefault();">Quy trình nghiệm thu</a></li>
+            <li><a href="#" onclick="event.preventDefault();">Tuyển dụng KTS</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gia Dinh Homes. Thiết kế & phát triển độc quyền bởi <span>MERCY TECH</span>.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link-text">Facebook</a>
+          <a href="#" class="social-link-text">Instagram</a>
+          <a href="#" class="social-link-text">Linkedin</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-overlay" id="mobileMenuOverlay">
+    <div class="mobile-card">
+      <span class="mobile-close" id="mobileMenuClose">&times;</span>
+      <div class="logo" style="margin-bottom: 40px;">
+        GIA DINH<span> HOMES</span>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="gd_construction_demo_vinhomes_about.html">Về Gia Định</a></li>
+        <li><a href="gd_construction_demo_vinhomes_services.html">Lĩnh vực hoạt động</a></li>
+        <li><a href="gd_construction_demo_vinhomes_projects.html">Kiệt tác nổi bật</a></li>
+        <li><a href="gd_construction_demo_vinhomes_magazine.html">Tạp chí không gian</a></li>
+        <li><a href="gd_construction_demo_vinhomes_contact.html" style="color: var(--gold);">Liên hệ</a></li>
+      </ul>
+      <a href="gd_construction_demo_vinhomes_contact.html" class="mobile-btn" style="text-decoration: none; text-align: center; display: block;">Nhận tư vấn</a>
+      <div style="font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 20px;">
+        <p>Hotline: 0839.555.111</p>
+        <p style="margin-top: 6px;">Email: contact@gdfurniture.vn</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING CONTACT TYPOGRAPHIC BAR -->
+  <div class="floating-contact-bar">
+    <a href="https://zalo.me/0839555111" target="_blank" class="floating-action-text">ZALO</a>
+    <div class="floating-divider"></div>
+    <a href="https://m.me/gdfurniture" target="_blank" class="floating-action-text">MESSENGER</a>
+    <div class="floating-divider"></div>
+    <a href="tel:0839555111" class="floating-action-text" style="color: var(--gold-light);">CALL</a>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Preloader dismissal (1.0s)
+      const preloader = document.getElementById('preloader');
+      setTimeout(() => {
+        preloader.classList.add('loaded');
+      }, 1000);
+
+      // Header scroll effect
+      const header = document.getElementById('mainHeader');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Mobile Menu Navigation controls
+      const mobileOverlay = document.getElementById('mobileMenuOverlay');
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+      function openMobileMenu() {
+        mobileOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeMobileMenu() {
+        mobileOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+      if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+
+      // Contact Form submission & validation
+      const consultationForm = document.getElementById('consultationForm');
+      const formSuccessMessage = document.getElementById('formSuccessMessage');
+
+      if (consultationForm) {
+        consultationForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const phoneInput = document.getElementById('clientPhone');
+          const phoneVal = phoneInput.value.replace(/\s+/g, '');
+          const phoneRegex = /^(03|05|07|08|09)[0-9]{8}$/;
+
+          if (!phoneRegex.test(phoneVal)) {
+            phoneInput.style.borderColor = '#ef4444';
+            alert('Số điện thoại không hợp lệ! Vui lòng điền đúng 10 chữ số di động Việt Nam (Ví dụ: 0908123456).');
+            return;
+          }
+
+          const btnSubmit = document.getElementById('btnSubmitForm');
+          btnSubmit.disabled = true;
+          btnSubmit.innerText = 'ĐANG GỬI THÔNG TIN...';
+
+          setTimeout(() => {
+            consultationForm.style.display = 'none';
+            formSuccessMessage.style.display = 'block';
+
+            setTimeout(() => {
+              consultationForm.reset();
+              consultationForm.style.display = 'block';
+              formSuccessMessage.style.display = 'none';
+              btnSubmit.disabled = false;
+              btnSubmit.innerText = 'GỬI THÔNG TIN ĐĂNG KÝ';
+              phoneInput.style.borderColor = '';
+            }, 5000);
+          }, 1500);
+        });
+      }
+    });
+  </script>
+</body>
+</html>
