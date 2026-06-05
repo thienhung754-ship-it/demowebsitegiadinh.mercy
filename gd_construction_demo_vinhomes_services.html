@@ -133,7 +133,7 @@
 
       <!-- MATERIALS CATALOG TABLE -->
       <div>
-        <div class="section-header">
+        <div class="section-header reveal-item">
           <span class="section-subtitle">Quy Chuẩn Vật Tư</span>
           <h2>Bảng Vật Liệu Tinh Hoa <span>Nhập Khẩu</span></h2>
           <p>Danh sách các dòng vật liệu cốt lõi cam kết sử dụng trong tất cả dự án hoàn thiện của Gia Định.</p>
@@ -304,6 +304,23 @@
 
       if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
       if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+    }
+      // IntersectionObserver for scroll reveal animations
+      const revealItems = document.querySelectorAll('.reveal-item');
+      if (revealItems.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        revealItems.forEach(item => {
+          observer.observe(item);
+        });
+      }
     });
   </script>
 </body>

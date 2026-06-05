@@ -109,7 +109,7 @@
 
       <!-- DETAILED VALUES SECTION -->
       <div style="margin-bottom: 100px;">
-        <div class="section-header">
+        <div class="section-header reveal-item">
           <span class="section-subtitle">Triết Lý Hoạt Động</span>
           <h2>3 Giá Trị Vàng Bảo Chứng <span>Chất Lượng</span></h2>
           <p>Bộ ba nguyên lý dẫn dắt mọi bước đi của đội ngũ thiết kế và kỹ sư tại Gia Định Homes.</p>
@@ -138,7 +138,7 @@
 
       <!-- HISTORICAL MILESTONES (TIMELINE) -->
       <div>
-        <div class="section-header">
+        <div class="section-header reveal-item">
           <span class="section-subtitle">Chặng Đường Phát Triển</span>
           <h2>Những Cột Mốc <span>Đáng Nhớ</span></h2>
           <p>Nhìn lại chặng đường 12 năm bền bỉ xây dựng lòng tin vững chắc trong lòng khách hàng.</p>
@@ -289,6 +289,23 @@
 
       if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
       if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+    }
+      // IntersectionObserver for scroll reveal animations
+      const revealItems = document.querySelectorAll('.reveal-item');
+      if (revealItems.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+
+        revealItems.forEach(item => {
+          observer.observe(item);
+        });
+      }
     });
   </script>
 </body>

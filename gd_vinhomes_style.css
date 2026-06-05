@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 /* --- LUXURY BRAND DESIGN TOKENS --- */
 :root {
   --obsidian: #03060d;
@@ -37,7 +39,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, textarea:focus-visi
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: var(--obsidian);
   color: var(--text-light);
   line-height: 1.65;
@@ -59,12 +61,14 @@ body {
 /* Ambient Background Glow Spotlights */
 .bg-spotlight {
   position: absolute;
-  width: 50vw;
-  height: 50vw;
+  width: 60vw;
+  height: 60vw;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(197, 168, 128, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(197, 168, 128, 0.08) 0%, transparent 70%);
   z-index: -1;
   pointer-events: none;
+  filter: blur(80px);
+  animation: spotlightBreathe 12s ease-in-out infinite alternate;
 }
 
 .spotlight-1 { top: 15vh; left: -10vw; }
@@ -99,7 +103,7 @@ body {
 }
 
 .preloader-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 36px;
   font-weight: 600;
   letter-spacing: 4px;
@@ -214,7 +218,7 @@ header.scrolled {
 }
 
 .logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 24px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -426,7 +430,7 @@ nav a:hover::after {
 }
 
 .hero h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 72px;
   font-weight: 500;
   line-height: 1.1;
@@ -545,7 +549,7 @@ nav a:hover::after {
 }
 
 .hero-preview-card h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 20px;
   color: #FFFFFF;
   margin-bottom: 6px;
@@ -590,7 +594,7 @@ section {
 }
 
 .section-header h2 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 1.2;
@@ -665,7 +669,7 @@ section {
 }
 
 .about-text h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 32px;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -691,7 +695,7 @@ section {
 }
 
 .value-box h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 20px;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -712,7 +716,9 @@ section {
 }
 
 .service-card {
-  background: var(--obsidian-card);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 40px 30px;
@@ -739,7 +745,7 @@ section {
 }
 
 .service-num {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 36px;
   font-weight: 300;
   color: var(--gold);
@@ -754,7 +760,7 @@ section {
 }
 
 .service-info h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 24px;
   color: #FFFFFF;
   margin-bottom: 12px;
@@ -849,7 +855,9 @@ section {
 
 .project-item {
   grid-column: span 6;
-  background: var(--obsidian-card);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   overflow: hidden;
@@ -932,7 +940,7 @@ section {
 }
 
 .project-caption h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 26px;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -1014,7 +1022,7 @@ section {
 }
 
 .step-number {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 16px;
   font-weight: 700;
   color: var(--gold);
@@ -1023,7 +1031,7 @@ section {
 }
 
 .process-step-content h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 22px;
   color: #FFFFFF;
   margin-bottom: 12px;
@@ -1165,7 +1173,7 @@ section {
   justify-content: center;
   box-shadow: 0 0 20px rgba(197, 168, 128, 0.4);
   transition: left 0.1s ease-out;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   color: var(--gold);
   font-weight: 700;
   font-size: 14px;
@@ -1196,7 +1204,7 @@ section {
 
 .quote-icon {
   font-size: 60px;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   color: var(--gold);
   line-height: 1;
   height: 30px;
@@ -1206,7 +1214,7 @@ section {
 }
 
 .testimonial-slide blockquote {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 26px;
   font-style: italic;
   color: var(--gold-light);
@@ -1266,7 +1274,9 @@ section {
 }
 
 .magazine-card {
-  background: var(--obsidian-card);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   overflow: hidden;
@@ -1300,7 +1310,7 @@ section {
 }
 
 .magazine-body h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 22px;
   color: #FFFFFF;
   margin-bottom: 12px;
@@ -1367,7 +1377,7 @@ section {
 }
 
 .contact-form-wrapper h3 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 32px;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -1540,7 +1550,7 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 26px;
   color: #FFFFFF;
   font-weight: 600;
@@ -1774,7 +1784,7 @@ footer {
 }
 
 .subpage-hero h1 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 48px;
   font-weight: 500;
   color: #FFFFFF;
@@ -1863,7 +1873,7 @@ footer {
 }
 
 .sidebar-widget h4 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cinzel', serif;
   font-size: 22px;
   color: #FFFFFF;
   margin-bottom: 20px;
