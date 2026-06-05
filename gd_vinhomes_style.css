@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* --- LUXURY BRAND DESIGN TOKENS --- */
 :root {
@@ -430,7 +430,7 @@ nav a:hover::after {
 }
 
 .hero h1 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 72px;
   font-weight: 500;
   line-height: 1.1;
@@ -549,7 +549,7 @@ nav a:hover::after {
 }
 
 .hero-preview-card h4 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
   color: #FFFFFF;
   margin-bottom: 6px;
@@ -594,7 +594,7 @@ section {
 }
 
 .section-header h2 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 1.2;
@@ -669,7 +669,7 @@ section {
 }
 
 .about-text h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 32px;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -695,7 +695,7 @@ section {
 }
 
 .value-box h4 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -760,7 +760,7 @@ section {
 }
 
 .service-info h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 24px;
   color: #FFFFFF;
   margin-bottom: 12px;
@@ -940,7 +940,7 @@ section {
 }
 
 .project-caption h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 26px;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -1031,7 +1031,7 @@ section {
 }
 
 .process-step-content h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 22px;
   color: #FFFFFF;
   margin-bottom: 12px;
@@ -1214,7 +1214,7 @@ section {
 }
 
 .testimonial-slide blockquote {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 26px;
   font-style: italic;
   color: var(--gold-light);
@@ -1310,7 +1310,7 @@ section {
 }
 
 .magazine-body h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 22px;
   color: #FFFFFF;
   margin-bottom: 12px;
@@ -1377,7 +1377,7 @@ section {
 }
 
 .contact-form-wrapper h3 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 32px;
   color: #FFFFFF;
   margin-bottom: 8px;
@@ -1784,7 +1784,7 @@ footer {
 }
 
 .subpage-hero h1 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 48px;
   font-weight: 500;
   color: #FFFFFF;
@@ -1873,7 +1873,7 @@ footer {
 }
 
 .sidebar-widget h4 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 22px;
   color: #FFFFFF;
   margin-bottom: 20px;
