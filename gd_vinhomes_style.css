@@ -2057,3 +2057,168 @@ footer {
   transform: scale(0.97) translateY(0) !important;
   transition: transform 0.1s ease !important;
 }
+
+
+/* ====================================================
+   5. STATE-OF-THE-ART METRIC DESIGN & ANIMATION SYSTEM
+   ==================================================== */
+
+/* Custom Cursor & Follower Ring */
+.custom-cursor {
+  width: 8px;
+  height: 8px;
+  background-color: var(--gold);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.custom-cursor-follower {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(197, 168, 128, 0.4);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, border-color 0.3s, background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-cursor-follower::after {
+  content: attr(data-label);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--obsidian);
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  text-transform: uppercase;
+}
+
+/* Hover active state for cursor */
+.custom-cursor-follower.active {
+  width: 70px;
+  height: 70px;
+  background-color: var(--gold);
+  border-color: var(--gold);
+  mix-blend-mode: difference;
+}
+
+.custom-cursor-follower.active::after {
+  opacity: 1;
+}
+
+.custom-cursor.active {
+  width: 0;
+  height: 0;
+}
+
+/* Hide on mobile devices */
+@media (hover: none) {
+  .custom-cursor,
+  .custom-cursor-follower {
+    display: none !important;
+  }
+}
+
+/* Subtle Organic Matte Grain/Noise Overlay */
+.bg-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Architectural CAD Blueprint Grid Lines */
+.cad-grid-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -2;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5vw;
+}
+
+.cad-line-v {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(197, 168, 128, 0.03);
+}
+
+/* Border Drawing Hover Effect for Cards */
+.service-card,
+.project-item,
+.magazine-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before,
+.project-item::before,
+.magazine-card::before,
+.service-card::after,
+.project-item::after,
+.magazine-card::after {
+  content: '';
+  position: absolute;
+  background-color: var(--gold);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 3;
+  opacity: 0;
+}
+
+/* Top border slides from left to right */
+.service-card::before,
+.project-item::before,
+.magazine-card::before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+}
+
+/* Right border slides from top to bottom */
+.service-card::after,
+.project-item::after,
+.magazine-card::after {
+  top: 0;
+  right: 0;
+  width: 1.5px;
+  height: 0;
+}
+
+.service-card:hover::before,
+.project-item:hover::before,
+.magazine-card:hover::before {
+  width: 100%;
+  opacity: 1;
+}
+
+.service-card:hover::after,
+.project-item:hover::after,
+.magazine-card:hover::after {
+  height: 100%;
+  opacity: 1;
+}
+
+/* Extra magnetic CTA adjustments */
+.btn-gold, .btn-outline, .nav-btn, .btn-submit {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, border-color 0.3s ease !important;
+}

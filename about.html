@@ -254,58 +254,6 @@
   </div>
 
   <!-- COMMON SCRIPTS -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Preloader dismissal (1.0s)
-      const preloader = document.getElementById('preloader');
-      setTimeout(() => {
-        preloader.classList.add('loaded');
-      }, 1000);
-
-      // Header scroll effect
-      const header = document.getElementById('mainHeader');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 40) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
-      });
-
-      // Mobile Menu Navigation controls
-      const mobileOverlay = document.getElementById('mobileMenuOverlay');
-      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-      const mobileMenuClose = document.getElementById('mobileMenuClose');
-
-      function openMobileMenu() {
-        mobileOverlay.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeMobileMenu() {
-        mobileOverlay.classList.remove('open');
-        document.body.style.overflow = '';
-      }
-
-      if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
-      if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
-          // IntersectionObserver for scroll reveal animations
-      const revealItems = document.querySelectorAll('.reveal-item');
-      if (revealItems.length > 0) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('revealed');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1 });
-
-        revealItems.forEach(item => {
-          observer.observe(item);
-        });
-      }
-    });
-  </script>
+  <script src="gd_vinhomes_script.js"></script>
 </body>
 </html>
